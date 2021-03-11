@@ -14,7 +14,6 @@ import FastImage from 'react-native-fast-image'
 
 function NewsCard(props) {
 
-
     console.log("datata---", props.data.image)
     return (
         <>

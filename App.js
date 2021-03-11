@@ -13,14 +13,16 @@ import {
 
 import NewsCard from './components/NewsCard'
 import NewsList from './components/NewsList'
+import BottomTabBar from './components/BottomTabBar'
+import LiveMatchCard from './components/LiveMatchCard'
 const App= () => {
   return (
     <>
       
 
       <View style={styles.scrollView}>
-     <NewsList/>
-      
+    <LiveMatchCard/>
+      {/* <BottomTabBar/> */}
      </View>
     </>
   );

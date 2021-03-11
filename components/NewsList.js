@@ -12,8 +12,6 @@ const NewsList = () => {
         return (
            
                 <FlatList
-               
-                 
                     data={newsData.data}
                     renderItem={({item}) => <NewsCard data={item} />}
                 />
