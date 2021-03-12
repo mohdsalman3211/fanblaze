@@ -16,22 +16,33 @@ import NewsList from './components/NewsList'
 import BottomTabBar from './components/BottomTabBar'
 import LiveMatchCard from './components/LiveMatchCard'
 const App= () => {
+  
   return (
     <>
       
 
-      <View style={styles.scrollView}>
+      <View style={styles.container}>
+      <View >
+    <ScrollView horizontal={true} >
     <LiveMatchCard/>
-      {/* <BottomTabBar/> */}
-     </View>
+    <LiveMatchCard/>
+    <LiveMatchCard/>
+    <LiveMatchCard/>
+    <LiveMatchCard/>
+    </ScrollView>
+        </View>
+        
+      <BottomTabBar style={{backgroundColor:'red'}}/>
+    </View>
+   
     </>
   );
 };
 
 const styles = StyleSheet.create({
-  scrollView: {
+  container: {
     flex:1,
-    backgroundColor:'#C0C0C0'
+    // backgroundColor:'lightgray'
   
   },
 });

@@ -38,18 +38,16 @@ const styles = StyleSheet.create({
     container: {
         flexDirection:'row',   
         padding: 10,
-        backgroundColor:'white',
+        backgroundColor:'lightgray',
         marginBottom:10,
         marginHorizontal:10,
-        borderRadius:5
+        borderRadius:10
     },
     heading: {
         padding:10,
         flex: 1,
         justifyContent:'space-between'
     },
-    text: {
-
-    }
+  
 })
 export default NewsCard
