@@ -10,7 +10,8 @@ import {
 import FastImage from 'react-native-fast-image'
 import img from '../images/scoreCard3x.png'
 
-export default function LiveMatchCard() {
+export default function LiveMatchCard(props) {
+    
     return (
         <>
            
@@ -20,7 +21,7 @@ export default function LiveMatchCard() {
 
                 
              <Text style={styles.status}>.live</Text>
-             <Text style={styles.place}>bangloru india</Text>
+             <Text style={styles.place}>ind vs enf</Text>
               
               <View style={styles.teamAndScoreContrainer}>
                   <View style={styles.imgAndNameContainer}>
@@ -58,10 +59,10 @@ export default function LiveMatchCard() {
 const styles = StyleSheet.create({
     container: {
         // flex: 4,
-        backgroundColor: 'yellow',
+        // backgroundColor: 'yellow',
         padding:10,
         margin:10,
-        width:300,
+        // width:300,
         // height:200
     },
   

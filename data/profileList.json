@@ -1,0 +1,48 @@
+{
+    "data":[
+        {
+            "name":"about",
+            "icon":"user",
+            "color":"blue"
+        },
+         {
+            "name":"Become a Fantasy Expert",
+            "icon":"book",
+            "color":"black"
+        },
+        {
+           "name":"Terms And Conditions",
+           "icon":"copy",
+           "color":"red"
+       }
+       ,
+         {
+            "name":"  Facebook",
+            "icon":"facebook",
+            "color":"blue"
+        }
+        ,
+         {
+            "name":"Instagram",
+            "icon":"instagram",
+            "color":"red"
+        },
+        
+         {
+            "name":"YouTube",
+            "icon":"youtube",
+            "color":"red"
+        },
+        
+         {
+            "name":"Invite Friends",
+            "icon":"adjust",
+            "color":"black"
+        },
+        {
+            "name":"Log Out",
+            "icon":"sign-out",
+            "color":"black"
+        }]
+
+}
