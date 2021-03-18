@@ -1,13 +1,13 @@
 import * as React from 'react';
-import { Text, View ,StyleSheet ,ImageBackground,TouchableOpacity} from 'react-native';
+import { Text, View ,StyleSheet ,ImageBackground,TouchableOpacity,Image} from 'react-native';
 import FastImage from 'react-native-fast-image'
 import ProfileScreenList from './ProfileScreenList';
 import ProfileScreenCard from './ProfileScreenCard'
 import ImagePicker from 'react-native-image-crop-picker';
 
 import Icon from 'react-native-vector-icons/FontAwesome';
-
-import img from '../images/scoreCard3x.png'
+import img from '../images/scoreCard3x.png';
+import pencilImage from '../images/pencil.png'
 
 export default class ProfileScreen extends React.Component {
       constructor (props){
@@ -22,7 +22,6 @@ export default class ProfileScreen extends React.Component {
             height: 400,
             cropping: true
           }).then(image => { 
-              console.log("image",image)
             this.setState({image:image.path})
           });
     }
@@ -39,9 +38,9 @@ export default class ProfileScreen extends React.Component {
     
           <View style={{flex:3,backgroundColor:'lightgray'}}>
              <View style={styles.profileCard}>
-             <Icon style={{alignSelf:'flex-end',paddingRight:10,paddingTop:0}} name="pencil" size={20} color="black" />
-           <TouchableOpacity activeOpacity = { .5 } onPress={()=>this.imagePicker()}>
-    
+                 <Image source={pencilImage} style={{alignSelf:'flex-end',height:20,width:20,marginRight:10,}} />
+           <TouchableOpacity onPress={()=>this.imagePicker()}
+             style={{}} activeOpacity = { .5 } >
              <FastImage 
                         
                         style={styles.image}
@@ -49,17 +48,15 @@ export default class ProfileScreen extends React.Component {
                             uri:this.state.image,
                         }}
                         resizeMode={FastImage.resizeMode.contain}
-                    />
+                        />
+                        </TouchableOpacity>
                     
-           </TouchableOpacity>
-                 <Text style={styles.userName}>Mohd Salman</Text>
+                 <Text style={styles.userName}>Narendra Modi</Text>
     
                  <Text style={[styles.userEmail,styles.comon]}>salmanmohd3211@gmail.com</Text>
     
                  <Text style={[styles.userNumberAndDate,styles.comon]}>+91 9756305457   |   Member since 17 mar 2021</Text>
-             </View>
-              
-               {/* <ProfileScreenCard /> */}
+             </View>              
                <View style={{flex:1, backgroundColor:'white',marginHorizontal:10
                ,borderRadius:5 ,marginTop:10,padding:10}}><ProfileScreenList/></View>
         </View>
@@ -82,7 +79,7 @@ const styles =StyleSheet.create({
         color:'white'
     },
     profileCard :{
-        height:190,
+        height:200,
         backgroundColor:'white',
         marginHorizontal:10,
         paddingVertical:10,

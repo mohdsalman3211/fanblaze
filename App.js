@@ -15,6 +15,7 @@ import NewsCard from './components/NewsCard'
 import NewsList from './components/NewsList'
 import BottomTabBar from './components/BottomTabBar'
 import LiveMatchCard from './components/LiveMatchCard'
+import CenterTabBar from './components/CenterTabBar'
 const App= () => {
   
   return (
@@ -22,6 +23,7 @@ const App= () => {
       
 
       <View style={styles.container}>
+       {/* <CenterTabBar/> */}
       {/* <View >
     <ScrollView horizontal={true} >
     <LiveMatchCard/>
@@ -32,7 +34,7 @@ const App= () => {
     </ScrollView>
         </View> */}
         
-      <BottomTabBar style={{backgroundColor:'red'}}/>
+      <BottomTabBar/>
     </View>
    
     </>
