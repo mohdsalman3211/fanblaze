@@ -6,7 +6,8 @@ import {
     ScrollView,
     View,
     Text,
-    Image
+    Image,
+    TouchableOpacity
 
 } from 'react-native';
 
@@ -17,7 +18,8 @@ function NewsCard(props) {
     // console.log("datata---", props.data.image)
     return (
         <>
-            <View style={styles.container}>
+            <    TouchableOpacity
+              style={styles.container} onPress={props.onPress}>
                 <FastImage
                     style={{ width: 100, height: 100 }}
                     source={{
@@ -29,7 +31,7 @@ function NewsCard(props) {
                     <Text style={styles.text} numberOfLines={2}>{props.data.title}</Text>
                     <Text>{new Date().toDateString()}</Text>
                 </View>
-            </View>
+            </    TouchableOpacity>
         </>
     )
 }

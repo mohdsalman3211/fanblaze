@@ -1,33 +1,35 @@
-import React, { Component } from 'react';
-import { Text, View } from 'react-native';
-import { NavigationContainer } from '@react-navigation/native';
-import { createMaterialTopTabNavigator } from '@react-navigation/material-top-tabs';
+// import * as React from 'react';
+// import { View, useWindowDimensions } from 'react-native';
+// import { TabView, SceneMap } from 'react-native-tab-view';
 
-function HomeScreen() {
-  return (
-    <View style={{ flex: 1, justifyContent: 'center', alignItems: 'center' }}>
-      <Text>Home!</Text>
-    </View>
-  );
-}
+// const FirstRoute = () => (
+//   <View style={{ flex: 1, backgroundColor: '#ff4081' }} />
+// );
 
-function SettingsScreen() {
-  return (
-    <View style={{ flex: 1, justifyContent: 'center', alignItems: 'center' }}>
-      <Text>Settings!</Text>
-    </View>
-  );
-}
+// const SecondRoute = () => (
+//   <View style={{ flex: 1, backgroundColor: '#673ab7' }} />
+// );
 
-const Tab = createMaterialTopTabNavigator();
+// export default function TabViewExample() {
+//   const layout = useWindowDimensions();
 
-export default function CenterTabBar() {
-  return (
-    <NavigationContainer>
-      <Tab.Navigator>
-        <Tab.Screen name="Home" component={HomeScreen} />
-        <Tab.Screen name="Settings" component={SettingsScreen} />
-      </Tab.Navigator>
-    </NavigationContainer>
-  );
-}
+//   const [index, setIndex] = React.useState(0);
+//   const [routes] = React.useState([
+//     { key: 'first', title: 'First' },
+//     { key: 'second', title: 'Second' },
+//   ]);
+
+//   const renderScene = SceneMap({
+//     first: FirstRoute,
+//     second: SecondRoute,
+//   });
+
+//   return (
+//     <TabView
+//       navigationState={{ index, routes }}
+//       renderScene={renderScene}
+//       onIndexChange={setIndex}
+//       initialLayout={{ width: layout.width }}
+//     />
+//   );
+// }
