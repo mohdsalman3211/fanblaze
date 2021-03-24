@@ -24,6 +24,7 @@ const App= () => {
 
       <View style={styles.container}>
        {/* <CenterTabBar/> */}
+        
       {/* <View >
     <ScrollView horizontal={true} >
     <LiveMatchCard/>
@@ -33,7 +34,6 @@ const App= () => {
     <LiveMatchCard/>
     </ScrollView>
         </View> */}
-        
       <BottomTabBar/>
     </View>
    

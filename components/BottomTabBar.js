@@ -6,6 +6,7 @@ import NewsList from './NewsList'
 import Match from './Match'
 import ProfileScreen from './ProfileScreen'
 import Icon from 'react-native-vector-icons/FontAwesome';
+import Navigator from './NewsList'
 const Tab = createBottomTabNavigator();
 
 export default function BottomTabBar() {
@@ -39,7 +40,7 @@ export default function BottomTabBar() {
       }
       }
       >
-        <Tab.Screen name="Home" component={NewsList}  />
+        <Tab.Screen name="Home" component={Navigator}  />
         <Tab.Screen name="Match" component={Match} />
         <Tab.Screen name="Profile" component={ProfileScreen} />
 

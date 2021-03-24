@@ -15,10 +15,9 @@ import FastImage from 'react-native-fast-image'
 
 function NewsCard(props) {
 
-    // console.log("datata---", props.data.image)
     return (
         <>
-            <    TouchableOpacity
+            <  TouchableOpacity
               style={styles.container} onPress={props.onPress}>
                 <FastImage
                     style={{ width: 100, height: 100 }}
